@@ -32,14 +32,17 @@ class ViewController: XTPageMenuViewController {
         
         self.currentSelectIndex = 1
         
+    }
+    
+    /// 获取当前选中的下标
+    override func currentSelectControllerIndex(index: NSInteger) {
+        
+        super.currentSelectControllerIndex(index: index)
+        
+        print("选中了第\(index + 1)页")
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
+
+
 

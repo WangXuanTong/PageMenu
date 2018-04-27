@@ -80,7 +80,7 @@ class XTPageMenuViewController: UIViewController, XTPageMenuViewDelegate, UIScro
     private var subControllers: Array? = [UIViewController]()
     
     /// 当前选中的菜单下标，需要复写
-    func currentSelectIndex(index: NSInteger) {
+    func currentSelectControllerIndex(index: NSInteger) {
         
     }
     
@@ -240,7 +240,7 @@ extension XTPageMenuViewController {
         
         self.menuView.selectIndex = self.currentSelectIndex
         
-        self.currentSelectIndex(index: self.currentSelectIndex)
+        self.currentSelectControllerIndex(index: self.currentSelectIndex)
     }
 }
 
